@@ -1,41 +1,45 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Dropdown Navigation Bar</title>
+    <title> Dropdown Navigation Bar </title>
     <link rel="stylesheet" href="CSS/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <nav>
       <ul class="left-side">
-        <li><a href = "">Home</a></li>
-        <li><a href = "">About</a></li>
-        <li>
-          <a href = "">
-            Projects
-              <ul>
-                <li class = "menu">Programming</li>
-                <li class = "menu">Designing</li>
-                <li class = "menu">Editing</li>
-              </ul>
+        <li class="nav-link-wrapper"><a href = "" class = "border-bottom">Home</a></li>
+        <li class="nav-link-wrapper"><a href = "" class = "border-bottom">About</a></li>
+        <li class="nav-link-wrapper">
+          <a class = "cursor-default background-black">
+            Portfolio
+            <ul class = "dropdown">
+              <li class = "menu"><a href = "">Programming</a></li>
+              <li class = "menu"><a href = "">Designing</a></li>
+              <li class = "menu"><a href = "">Editing</a></li>
+            </ul>
           </a>
         </li>
-        <li>
-          <a href = "">
+        <li class="nav-link-wrapper">
+          <a class = "cursor-default background-black">
             Connect
-            <ul>
-              <li class = "menu">WhatsApp</li>
-              <li class = "menu">Instagram</li>
-              <li class = "divider"></li>
-              <li class = "menu">Telegram</li>
-              <li class = "menu">Line</li>
+            <ul class = "dropdown">
+              <li class = "menu"><a href = "">Instagram</a></li>
+              <li class = "menu"><a href = "">Facebook</a></li>
+              <li role = "seperator" class = "divider"><span> </span></li>
+              <li class = "menu"><a href = "">WhatsApp</a></li>
+              <li class = "menu"><a href = "">Telegram</a></li>
+              <li class = "menu"><a href = "">Line</a></li>
             </ul>
           </a>
         </li>
       </ul>
-      <ul class="right-side">
-        <li>DAVID G.S</li>
+      <ul class = "right-side">
+        <li class="author cursor-pointer">
+          DAVID G.S
+        </li>
       </ul>
     </nav>
   </body>

@@ -1,12 +1,10 @@
 *{
-  border: 0px;
   margin: 0px;
+  padding: 0px;
 }
 
 body{
-  background: rgb(41, 41, 41);
   height: 800px;
-  box-sizing: border-box;
 }
 
 ul li{
@@ -15,77 +13,103 @@ ul li{
 
 a{
   text-decoration: none;
+  text-transform: none;
 }
 
 nav{
-  position: fixed;
   display: flex;
-  justify-content: space-around;
-  background: rgb(33, 37, 41);
-  min-height: 60px;
-  max-height: 60px;
-  align-items: center;
+  position: fixed;
+  min-height: 50px;
+  max-height: 50px;
+  background: #212523;
   width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .left-side{
   display: flex;
 }
 
-.left-side > li > a{
-  font-size: 19px;
-  color: #9d9d9d;
-  letter-spacing: 0.5px;
-  font-family: "Times New Roman";
-  padding: 17px;
-}
-
-.left-side > li > a:hover{
+.nav-link-wrapper > a{
   color: white;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 14px;
+  padding-top: 16px;
 }
 
-.left-side li a ul{
-  display: none;
+.nav-link-wrapper:hover > a{
+  color: lightskyblue;
 }
 
-.left-side li:hover ul{
-  display: block;
-  position: absolute;
-  top: 99.1%;
-  width: 120px!important;
-  background: rgb(33, 37, 41);
-  text-align: center;
-}
-
-.left-side li a ul .menu{
-  margin-left: -40px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  color: #9d9d9d;
-  font-size: 17px;
-}
-
-.left-side li a ul .menu:hover{
+.author{
   color: white;
-}
-
-.right-side > li{
-  font-size: 28px;
-  letter-spacing: 2.0px;
-  color: #9d9d9d;
+  font-size: 26px;
   font-weight: bold;
+  letter-spacing: 2.5px;
   font-family: "Helvetica";
 }
 
-.right-side > li:hover{
+.author:hover{
+  color: lightskyblue;
+}
+
+.nav-link-wrapper > .dropdown{
+  display: none;
+}
+
+.nav-link-wrapper:hover > .dropdown{
+  display: block;
+  position: absolute;
+  top: 99.1%;
+  width: 150px;
+  text-align: center;
+  background: #212523;
+}
+
+.nav-link-wrapper > .dropdown > .menu{
+  padding: 10px;
+}
+
+.nav-link-wrapper > .dropdown > .menu > a{
   color: white;
+}
+
+.divider > span{
+  display: block;
+  background: white;
+  height: 1px;
+  width: 150px;
+}
+
+.nav-link-wrapper:hover > .dropdown{
+  border-bottom: 3px solid lightskyblue;
+}
+
+.nav-link-wrapper > .dropdown > .menu:hover{
+  background: black;
+}
+
+.nav-link-wrapper .dropdown .menu:hover > a{
+  color: lightskyblue;
+}
+
+/* others */
+.cursor-default{
+  cursor: default;
+}
+
+.cursor-pointer{
   cursor: pointer;
 }
 
-.divider{
-  margin-left: -40px;
-  overflow: hidden;
-  height: 1px;
-  background: #9d9d9d;
-  width: 160px;
+.nav-link-wrapper:hover > .border-bottom{
+  border-bottom: 3px solid lightskyblue;
+}
+
+.nav-link-wrapper:hover > .background-black{
+  background: black;
 }
